@@ -81,4 +81,7 @@ exports = module.exports = function plugin (schema, opts) {
   // Adds dynamic helpers such as loggedIn,
   // accessible from the views
   exports.helpExpress = everyauth.helpExpress.bind(everyauth);
+
+	// Expose everyauth
+	exports.everyauth = everyauth;
 };
